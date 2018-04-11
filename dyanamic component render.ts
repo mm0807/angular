@@ -27,4 +27,15 @@ export class App {
     let instance  = this.viewContainerRef.createComponent(this.componentFactory, 0).instance;
     instance.message = "some text!!";
   }
+//   private loadComponent(): void {
+//         const componentFactory = this.factoryResolver.resolveComponentFactory(MyInputComponent);
+
+//         const viewContainerRef = this.componentHost.viewContainerRef;
+//         viewContainerRef.clear();
+
+//         const componentRef = viewContainerRef.createComponent(componentFactory);
+//         (<IComponent>componentRef.instance).data = data;
+// }
+  //this.componentRef.instance.variableName = 'abc'; 
+ //this.componentRef.instance.observeVariabel.subscribe(result => { this.v = result;  // here observeVariabel is a Observable in dynamic component
 }
